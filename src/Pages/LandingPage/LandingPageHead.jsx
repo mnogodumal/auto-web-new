@@ -19,6 +19,7 @@ function LandingPageHead() {
           <Button className={'rounded-[8px] py-[16px] w-[112px] h-[56px] bg-[#1b1b1e] font-[--font-family] font-[700] font-[14px] leading-[171%] uppercase text-[--general---white]'} text={'Войти'} />
         </div>
       </section>
+      <></>
     </>
   )
 }

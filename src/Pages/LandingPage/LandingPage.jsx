@@ -1,7 +1,10 @@
+// import { BrowserRouter } from "react-router-dom"
 import LandingPageContent from "./LandingPageContent"
 import LandingPageHead from "./LandingPageHead"
 
-function LandingPage() {
+
+
+export default function LandingPage() {
   return (
     <>
       <LandingPageHead />
@@ -9,5 +12,3 @@ function LandingPage() {
     </>
   )
 }
-
-export default LandingPage 

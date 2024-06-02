@@ -16,7 +16,7 @@ code {
     monospace;
 }
 
-/* .active {
-  color: #009661;
-  
-} */
+.container {
+  /* width: 1220px; */
+  margin: 0 auto;
+}

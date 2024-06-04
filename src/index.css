@@ -1,4 +1,8 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
   margin: 0;
   --form: #e9e9e9;
   --new-bg: #f9f9f9;
@@ -14,9 +18,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.container {
-  /* width: 1220px; */
-  margin: 0 auto;
-}
+} */

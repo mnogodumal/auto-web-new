@@ -5,6 +5,8 @@ import LandingCardGazel from '../../image/LandingCard/LandingGazel.png'
 import LandingCardTractor from '../../image/LandingCard/LendingCardTractor.png'
 import LandingCardExcov from '../../image/LandingCard/LandingCardExcov.png'
 import LandingCardPod from '../../image/LandingCard/LandingCardPod.png'
+import CardGroup from '../../image/LandingCard/CardGroup.png'
+import LandingPriceCard from "../../Components/Card/LandingPriceCard";
 
 export default function LandingPageContent() {
   return (
@@ -38,6 +40,29 @@ export default function LandingPageContent() {
             </div>
             <div className="mt-[30px]">
               <LandingCard img={LandingCardPod} text={'Складское оборудование'} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#1B1B1E] pt-[90px] pb-[110px]">
+        <div className="container">
+          <div className="flex pl-[65px]">
+            <p className="font-[200] text-[24px] leading-[150%] text-[var(--general---white)] w-[186px] text-center">Понятный мессенджер</p>
+            <p className="font-[200] text-[24px] leading-[150%] text-[var(--general---white)] w-[150px] text-center ml-[275px]">Удобный дизайн</p>
+            <p className="font-[200] text-[24px] leading-[150%] text-[var(--general---white)] w-[186px] text-center ml-[270px]">Круглосуточная поддержка</p>
+          </div>
+          <img src={CardGroup} alt="phote" />
+        </div>
+      </section>
+      <section className="bg-[#141416] py-[180px] ">
+        <div className="container">
+          <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center">
+              <p className="font-[200] text-[24px] leading-[150%] text-[#858586]">Тарифы и цены</p>
+              <h2 className="mt-[20px] font-[200] text-[40px] leading-[150%] text-center text-[var(--general---white)] w-[886px]">Стань продавцом сегодня и получи 10 объявлений бесплатно!</h2>
+            </div>
+            <div>
+              <LandingPriceCard tarif={'Starter'} price={'Бесплатно'} ad={'До 10 объявлений'} />
             </div>
           </div>
         </div>

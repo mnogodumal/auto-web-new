@@ -61,8 +61,10 @@ export default function LandingPageContent() {
               <p className="font-[200] text-[24px] leading-[150%] text-[#858586]">Тарифы и цены</p>
               <h2 className="mt-[20px] font-[200] text-[40px] leading-[150%] text-center text-[var(--general---white)] w-[886px]">Стань продавцом сегодня и получи 10 объявлений бесплатно!</h2>
             </div>
-            <div>
+            <div className="flex gap-[123px] mt-[80px]">
               <LandingPriceCard tarif={'Starter'} price={'Бесплатно'} ad={'До 10 объявлений'} />
+              <LandingPriceCard tarif={'Premium'} price={'Бесплатно'} ad={'До 30 объявлений '} />
+              <LandingPriceCard tarif={'Ultimate'} price={'Бесплатно'} ad={'До 50 объявлений'} />
             </div>
           </div>
         </div>

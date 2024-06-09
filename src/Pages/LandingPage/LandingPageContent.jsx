@@ -63,8 +63,8 @@ export default function LandingPageContent() {
             </div>
             <div className="flex gap-[123px] mt-[80px]">
               <LandingPriceCard tarif={'Starter'} price={'Бесплатно'} ad={'До 10 объявлений'} />
-              <LandingPriceCard tarif={'Premium'} price={'Бесплатно'} ad={'До 30 объявлений '} />
-              <LandingPriceCard tarif={'Ultimate'} price={'Бесплатно'} ad={'До 50 объявлений'} />
+              <LandingPriceCard tarif={'Premium'} sign={'₴'} price={'999'} month={'/ месяц'} ad={'До 30 объявлений '} />
+              <LandingPriceCard tarif={'Ultimate'} sign={'₴'} price={'1999'} month={'/ месяц'} ad={'До 50 объявлений'} />
             </div>
           </div>
         </div>

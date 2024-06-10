@@ -16,5 +16,6 @@ export default function LandingPriceCard({ tarif, price, ad, sign, month }) {
         </div>
       </div>
     </>
+
   )
 }

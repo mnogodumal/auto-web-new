@@ -7,6 +7,7 @@ import LandingCardExcov from '../../image/LandingCard/LandingCardExcov.png'
 import LandingCardPod from '../../image/LandingCard/LandingCardPod.png'
 import CardGroup from '../../image/LandingCard/CardGroup.png'
 import LandingPriceCard from "../../Components/Card/LandingPriceCard";
+import LandingPhone from '../../image/LandingCard/LandingPhone.png'
 
 export default function LandingPageContent() {
   return (
@@ -65,6 +66,14 @@ export default function LandingPageContent() {
               <LandingPriceCard tarif={'Starter'} price={'Бесплатно'} ad={'До 10 объявлений'} />
               <LandingPriceCard tarif={'Premium'} sign={'₴'} price={'999'} month={'/ месяц'} ad={'До 30 объявлений '} />
               <LandingPriceCard tarif={'Ultimate'} sign={'₴'} price={'1999'} month={'/ месяц'} ad={'До 50 объявлений'} />
+            </div>
+            <div className="mt-[120px] relative">
+              <img className="absolute" src={LandingPhone} alt="" />
+              <div className="w-[703px] h-[301px] rounded-[8px] bg-[#1b1b1e] pt-[30px] pr-[40px] pb-[39px] pl-[259px] mt-[51px]">
+                <h2 className="font-[200] text-[24px] leading-[150%] text-[var(--general---white)] w-[404px]">Хотите размещать больше 50-ти объявлений в месяц?</h2>
+                <p className="font-[200] text-[16px] leading-[150%] text-[#858586] w-[247px] mt-[16px]">Мы предложим индивидуальные условия сотрудничества!</p>
+                <Button className={'mt-[40px]'} text={'отдел продаж'} />
+              </div>
             </div>
           </div>
         </div>

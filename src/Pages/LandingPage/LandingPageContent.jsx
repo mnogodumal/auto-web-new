@@ -75,6 +75,7 @@ export default function LandingPageContent() {
                 <Button className={'mt-[40px]'} text={'отдел продаж'} />
               </div>
             </div>
+
           </div>
         </div>
       </section>

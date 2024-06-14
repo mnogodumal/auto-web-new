@@ -5,9 +5,13 @@ import LandingCardGazel from '../../image/LandingCard/LandingGazel.png'
 import LandingCardTractor from '../../image/LandingCard/LendingCardTractor.png'
 import LandingCardExcov from '../../image/LandingCard/LandingCardExcov.png'
 import LandingCardPod from '../../image/LandingCard/LandingCardPod.png'
-import CardGroup from '../../image/LandingCard/CardGroup.png'
+import CardGroup from '../../image/LandingCard/CardGroup.svg'
 import LandingPriceCard from "../../Components/Card/LandingPriceCard";
 import LandingPhone from '../../image/LandingCard/LandingPhone.png'
+import LandingCardStart from "../../Components/Card/LandingCardStart";
+import LandingStart1 from '../../image/LandingCard/Start1.svg'
+import LandingStart2 from '../../image/LandingCard/Start2.svg'
+import LandingStart3 from '../../image/LandingCard/Start3.svg'
 
 export default function LandingPageContent() {
   return (
@@ -75,6 +79,17 @@ export default function LandingPageContent() {
                 <Button className={'mt-[40px]'} text={'отдел продаж'} />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#1B1B1E] py-[120px] ">
+        <div className="container">
+          <div className="flex flex-col items-center">
+            <h2 className="mt-[20px] font-[200] text-[40px] leading-[150%] text-center text-[var(--general---white)] w-[886px]">Начать продавать легко!</h2>
+          </div>
+          <div className="mt-[80px] flex flex-col gap-[60px]">
+            <LandingCardStart img={LandingStart1} step={'Шаг первый'} text={'Регистрация'} />
+            <LandingCardStart img={LandingStart3} step={'Шаг третий'} text={'Размещение объявления'} />
           </div>
         </div>
       </section>

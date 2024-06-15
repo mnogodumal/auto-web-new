@@ -12,6 +12,8 @@ import LandingCardStart from "../../Components/Card/LandingCardStart";
 import LandingStart1 from '../../image/LandingCard/Start1.svg'
 import LandingStart2 from '../../image/LandingCard/Start2.svg'
 import LandingStart3 from '../../image/LandingCard/Start3.svg'
+import LandingCardStartBlack from "../../Components/Card/LandingCardStartBlack";
+import Footer from "../../Components/Footer/Footer";
 
 export default function LandingPageContent() {
   return (
@@ -83,16 +85,21 @@ export default function LandingPageContent() {
         </div>
       </section>
       <section className="bg-[#1B1B1E] py-[120px] ">
-        <div className="container">
+        <div className="w-[1445px] my-0 mx-auto">
           <div className="flex flex-col items-center">
             <h2 className="mt-[20px] font-[200] text-[40px] leading-[150%] text-center text-[var(--general---white)] w-[886px]">Начать продавать легко!</h2>
           </div>
           <div className="mt-[80px] flex flex-col gap-[60px]">
             <LandingCardStart img={LandingStart1} step={'Шаг первый'} text={'Регистрация'} />
+            <LandingCardStartBlack img={LandingStart2} step={'Шаг второй'} text={'Выбор пакета'} />
             <LandingCardStart img={LandingStart3} step={'Шаг третий'} text={'Размещение объявления'} />
+          </div>
+          <div className="text-center mt-[120px] ">
+            <Button text={'стать продавцем'} />
           </div>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

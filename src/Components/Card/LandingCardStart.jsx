@@ -11,6 +11,5 @@ export default function LandingCardStart({ img, step, text }) {
         </div>
       </div>
     </>
-
   )
 }

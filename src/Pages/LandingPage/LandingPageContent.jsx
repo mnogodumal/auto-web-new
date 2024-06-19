@@ -14,6 +14,7 @@ import LandingStart2 from '../../image/LandingCard/Start2.svg'
 import LandingStart3 from '../../image/LandingCard/Start3.svg'
 import LandingCardStartBlack from "../../Components/Card/LandingCardStartBlack";
 import Footer from "../../Components/Footer/Footer";
+import OpenPopUp from "../../Components/Button/OpenPopUp";
 
 export default function LandingPageContent() {
   return (

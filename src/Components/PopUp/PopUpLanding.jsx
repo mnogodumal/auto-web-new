@@ -1,4 +1,5 @@
 import Button from "../Button/Button"
+import LandingForm from "../Form/LandingForm"
 
 export default function PopUpLanding() {
   return (
@@ -15,9 +16,7 @@ export default function PopUpLanding() {
             <h2 className=" font-[200] text-[40px] leading-[150%] text-center text-[var(--general---white)] ">Мы свяжемся с вами в ближайшее время</h2>
             <p className="mt-[20px] font-[200] text-[16px] leading-[150%]  text-center text-[#858586] w-[332px] ">Впишите свои данные и мы перезвоним вам для создания личного тарифного плана</p>
           </div>
-          <form action="">
-
-          </form>
+          <LandingForm />
           <Button text={'Перезвоните мне!'} className={'mt-[40px]'} />
         </div>
       </div >

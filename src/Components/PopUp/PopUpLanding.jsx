@@ -17,7 +17,6 @@ export default function PopUpLanding() {
             <p className="mt-[20px] font-[200] text-[16px] leading-[150%]  text-center text-[#858586] w-[332px] ">Впишите свои данные и мы перезвоним вам для создания личного тарифного плана</p>
           </div>
           <LandingForm />
-          <Button text={'Перезвоните мне!'} className={'mt-[40px]'} />
         </div>
       </div >
     </>

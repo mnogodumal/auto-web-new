@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import Button from "../Button/Button";
 
 export default function LandingForm() {
 
@@ -6,7 +7,9 @@ export default function LandingForm() {
     register,
     formState: { errors },
     handleSubmit
-  } = useForm()
+  } = useForm({
+    mode: 'onBlur'
+  })
 
   const onSubmit = (data) => {
     alert(JSON.stringify(data))
@@ -17,10 +20,25 @@ export default function LandingForm() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <input type="text" {...register('firstname', {
           required: 'Поле обязательно к заполнению!',
-          minLength: 2
+          minLength: {
+            value: 3,
+            message: 'Минимум 3 символа'
+          }
         })} />
-        <div className="h-[40px] text-red-600">{errors?.firstname && <p>{errors?.firstname?.message || 'Error!!!'}</p>}</div>
-        <input type="submit" className="w-[100px] h-[100px] bg-slate-900" />
+        <div className="h-[40px] text-[#eb5757]">{errors?.firstname && <p>{errors?.firstname?.message || 'Error!!!'}</p>}</div>
+        <input type="mail" {...register('email', {
+          required: 'Поле обязательно к заполнению!',
+          minLength: {
+            value: 5,
+            message: 'Минимум 5 символа'
+          },
+          email: {
+            value: '@',
+            message: 'Наличие @'
+          }
+        })} />
+        <div className="h-[40px] text-[#eb5757]">{errors?.email && <p>{errors?.email?.message || 'ERR!!!'}</p>}</div>
+        <Button text={'Перезвоните мне!'} className={'mt-[40px]'} />
       </form>
     </>
   )

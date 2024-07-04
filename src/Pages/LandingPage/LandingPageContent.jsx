@@ -79,7 +79,7 @@ export default function LandingPageContent() {
               <div className="w-[703px] h-[301px] rounded-[8px] bg-[#1b1b1e] pt-[30px] pr-[40px] pb-[39px] pl-[259px] mt-[51px]">
                 <h2 className="font-[200] text-[24px] leading-[150%] text-[var(--general---white)] w-[404px]">Хотите размещать больше 50-ти объявлений в месяц?</h2>
                 <p className="font-[200] text-[16px] leading-[150%] text-[#858586] w-[247px] mt-[16px]">Мы предложим индивидуальные условия сотрудничества!</p>
-                <Button className={'mt-[40px]'} text={'отдел продаж'} />
+                <Button className={'mt-[40px]'} text={'отдел продаж'} onClick={open} />
               </div>
             </div>
           </div>

@@ -14,7 +14,8 @@ import LandingStart2 from '../../image/LandingCard/Start2.svg'
 import LandingStart3 from '../../image/LandingCard/Start3.svg'
 import LandingCardStartBlack from "../../Components/Card/LandingCardStartBlack";
 import Footer from "../../Components/Footer/Footer";
-import OpenPopUp from "../../Components/Button/OpenPopUp";
+import { ModalProvider } from "../../Components/PopUp/PopUpLandingContext";
+import PopUpLanding from "../../Components/PopUp/PopUpLanding";
 
 export default function LandingPageContent() {
   return (
@@ -26,7 +27,7 @@ export default function LandingPageContent() {
             <div className='max-w-[768px]'>
               <p className="font-[200] text-[24px] leading-[150%] text-[#858586]">Novo - маркетплейс техники</p>
               <h1 className="mt-[16px] font-[200] text-[60px] leading-[150%] ">Продавай технику быстро и удобно!</h1>
-              <Button className={'mt-[65px]'} text={'стать продавцем на Novo'} />
+              <Button className={'mt-[65px]'} text={'стать продавцем на Novo'} onClick={() => { console.log('Hi!') }} />
             </div>
           </div>
         </div>
@@ -79,7 +80,7 @@ export default function LandingPageContent() {
               <div className="w-[703px] h-[301px] rounded-[8px] bg-[#1b1b1e] pt-[30px] pr-[40px] pb-[39px] pl-[259px] mt-[51px]">
                 <h2 className="font-[200] text-[24px] leading-[150%] text-[var(--general---white)] w-[404px]">Хотите размещать больше 50-ти объявлений в месяц?</h2>
                 <p className="font-[200] text-[16px] leading-[150%] text-[#858586] w-[247px] mt-[16px]">Мы предложим индивидуальные условия сотрудничества!</p>
-                <Button className={'mt-[40px]'} text={'отдел продаж'} onClick={open} />
+                <Button className={'mt-[40px]'} text={'отдел продаж'} />
               </div>
             </div>
           </div>

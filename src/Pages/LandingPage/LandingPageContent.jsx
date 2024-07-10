@@ -16,6 +16,7 @@ import LandingCardStartBlack from "../../Components/Card/LandingCardStartBlack";
 import Footer from "../../Components/Footer/Footer";
 import { ModalProvider } from "../../Components/PopUp/PopUpLandingContext";
 import PopUpLanding from "../../Components/PopUp/PopUpLanding";
+import { Link } from "react-router-dom";
 
 export default function LandingPageContent() {
   return (
@@ -27,7 +28,7 @@ export default function LandingPageContent() {
             <div className='max-w-[768px]'>
               <p className="font-[200] text-[24px] leading-[150%] text-[#858586]">Novo - маркетплейс техники</p>
               <h1 className="mt-[16px] font-[200] text-[60px] leading-[150%] ">Продавай технику быстро и удобно!</h1>
-              <Button className={'mt-[65px]'} text={'стать продавцем на Novo'} onClick={() => { console.log('Hi!') }} />
+              <Button className={'mt-[65px]'} text={'стать продавцем на Novo'} to={'/regsel'} />
             </div>
           </div>
         </div>
@@ -97,7 +98,7 @@ export default function LandingPageContent() {
             <LandingCardStart img={LandingStart3} step={'Шаг третий'} text={'Размещение объявления'} />
           </div>
           <div className="text-center mt-[120px] ">
-            <Button text={'стать продавцем'} />
+            <Button text={'стать продавцем'} to={'/regsel'} />
           </div>
         </div>
       </section>

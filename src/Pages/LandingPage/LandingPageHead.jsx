@@ -17,7 +17,7 @@ function LandingPageHead() {
               <a href="/">Тарифы</a>
             </ul>
           </nav>
-          <Button className="!py-[16px] !w-[112px] !h-[56px] !bg-[#1b1b1e] !text-[14px] !leading-[171%] !text-[--general---white]" text="Войти" />
+          <Button className="!py-[16px] !w-[112px] !h-[56px] !bg-[#1b1b1e] !text-[14px] !leading-[171%] !text-[--general---white]" text="Войти" to={'/regbuy'} />
           {/* как сделать стили кнопки, чтобы они перезаписывали дефолтные и не через !  */}
         </div>
       </header>

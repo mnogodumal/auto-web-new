@@ -104,6 +104,7 @@ export default function LandingPageContent() {
       </section>
       <Footer />
     </>
+
   )
 }
 

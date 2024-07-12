@@ -1,7 +1,11 @@
+import Footer from "../../Components/Footer/Footer";
+import HeaderSeller from "../../Components/Header/HeaderSeller";
+
 export default function RegistrationPageSelle() {
   return (
     <>
-      <h1>HELLO WORLD!!!</h1>
+      <HeaderSeller />
+      <Footer />
     </>
   )
 }

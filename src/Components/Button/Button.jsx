@@ -8,8 +8,6 @@ export default function Button({ text, className, onClick, disabled, to }) {
 
   const { openModal } = useContext(ModalContext)
 
-
-
   const buttonContent = (
     <button className={classNames(defaultClasses, className)} onClick={() => { openModal() }} disabled={disabled}>
       {text}

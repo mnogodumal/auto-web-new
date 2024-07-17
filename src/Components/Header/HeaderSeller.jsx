@@ -12,7 +12,7 @@ export default function HeaderSeller() {
             <div>
               <p>NOVO SELLER</p>
             </div>
-            {/* <Button /> */}
+            <Button text={'Перейти на NOVO'} />
           </div>
         </div>
       </header>

@@ -178,7 +178,7 @@ export default function SellerRegForm() {
 
 
             </div>
-            {/* <Button /> */}
+            <Button text={'Продолжить'} />
           </form>
         </div>
 

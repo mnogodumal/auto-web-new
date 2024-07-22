@@ -38,7 +38,7 @@ export default function SellerRegForm() {
                       message: 'Введите почту корректно'
                     }
                   })} />
-                  <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.email && <p>{errors?.email?.message || 'Error!!!'}</p>}</div>
+                  <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.email && <p>{errors?.email?.message || 'Error!!!'}</p>}</div>
                 </div>
                 <div>
                   <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">Пароль</p>
@@ -49,11 +49,11 @@ export default function SellerRegForm() {
                       message: 'Минимум 3 символа'
                     }
                   })} />
-                  <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.password && <p>{errors?.password?.message || 'Error!!!'}</p>}</div>
+                  <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.password && <p>{errors?.password?.message || 'Error!!!'}</p>}</div>
                 </div>
               </div>
             </div>
-            <div className="mt-[40px]">
+            <div className="mt-[10px]">
               <div>
                 <p className="font-[300] text-[16px] leading-[150%] text-[var(--text---main)]">Про компанию</p>
               </div>
@@ -68,7 +68,7 @@ export default function SellerRegForm() {
                         message: 'Минимум 3 символа'
                       }
                     })} />
-                    <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.namecomp && <p>{errors?.namecomp?.message || 'Error!!!'}</p>}</div>
+                    <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.namecomp && <p>{errors?.namecomp?.message || 'Error!!!'}</p>}</div>
                   </div>
                   <div>
                     <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">Страна</p>
@@ -79,7 +79,7 @@ export default function SellerRegForm() {
                         message: 'Минимум 3 символа'
                       }
                     })} />
-                    <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.country && <p>{errors?.country?.message || 'Error!!!'}</p>}</div>
+                    <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.country && <p>{errors?.country?.message || 'Error!!!'}</p>}</div>
                   </div>
                 </div>
                 <div className="flex gap-[20px]">
@@ -92,7 +92,7 @@ export default function SellerRegForm() {
                         message: 'Минимум 3 символа'
                       }
                     })} />
-                    <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.city && <p>{errors?.city?.message || 'Error!!!'}</p>}</div>
+                    <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.city && <p>{errors?.city?.message || 'Error!!!'}</p>}</div>
                   </div>
                   <div>
                     <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">Адрес</p>
@@ -103,7 +103,7 @@ export default function SellerRegForm() {
                         message: 'Минимум 3 символа'
                       }
                     })} />
-                    <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.address && <p>{errors?.address?.message || 'Error!!!'}</p>}</div>
+                    <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.address && <p>{errors?.address?.message || 'Error!!!'}</p>}</div>
                   </div>
                 </div>
                 <div className="flex gap-[20px]">
@@ -116,7 +116,7 @@ export default function SellerRegForm() {
                         message: 'Минимум 3 символа'
                       }
                     })} />
-                    <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.index && <p>{errors?.index?.message || 'Error!!!'}</p>}</div>
+                    <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.index && <p>{errors?.index?.message || 'Error!!!'}</p>}</div>
                   </div>
                   <div>
                     <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">Мобильный телефон</p>
@@ -127,7 +127,7 @@ export default function SellerRegForm() {
                         message: 'Минимум 3 символа'
                       }
                     })} />
-                    <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.phonecomp && <p>{errors?.phonecomp?.message || 'Error!!!'}</p>}</div>
+                    <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.phonecomp && <p>{errors?.phonecomp?.message || 'Error!!!'}</p>}</div>
                   </div>
                 </div>
                 <div className="flex gap-[20px]">
@@ -145,7 +145,7 @@ export default function SellerRegForm() {
                 </div>
               </div>
             </div>
-            <div className="mt-[40px]">
+            <div className="mt-[10px]">
               <div>
                 <p className="font-[300] text-[16px] leading-[150%] text-[var(--text---main)]">Контактное лицо</p>
               </div>
@@ -159,7 +159,7 @@ export default function SellerRegForm() {
                       message: 'Минимум 3 символа'
                     }
                   })} />
-                  <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.name && <p>{errors?.name?.message || 'Error!!!'}</p>}</div>
+                  <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.name && <p>{errors?.name?.message || 'Error!!!'}</p>}</div>
                 </div>
                 <div>
                   <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">Мобильный телефон</p>
@@ -170,30 +170,23 @@ export default function SellerRegForm() {
                       message: 'Минимум 3 символа'
                     }
                   })} />
-                  <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.phone && <p>{errors?.phone?.message || 'Error!!!'}</p>}</div>
+                  <div className="h-[20px] font-[200] text-[14px] text-[#eb5757]">{errors?.phone && <p>{errors?.phone?.message || 'Error!!!'}</p>}</div>
                 </div>
               </div>
             </div>
-            <div>
-
-
+            <div className="flex gap-[12px] items-center">
+              <input className="w-[18px] h-[18px] rounded-[4px] bg-[var(--accent---main-green)] caret-yellow-800 " type='checkbox' />
+              <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">Авторизуясь, Вы принимаете
+                <a className="text-[var(--accent---main-green)]" href="/"> Условия использования </a>
+                и
+                <a className="text-[var(--accent---main-green)]" href="/"> Заявлением о конфиденциальности </a>
+                NOVO
+              </p>
             </div>
-            <Button text={'Продолжить'} />
+            <Button className={'block mt-[48px] mx-auto my-0'} text={'Продолжить'} />
           </form>
         </div>
-
       </div>
     </>
   )
 }
-
-
-
-
-
-
-
-
-
-
-

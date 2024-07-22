@@ -8,6 +8,7 @@ import LandingPage from './Pages/LandingPage/LandingPage';
 import RegistrationPageSelle from './Pages/RegistrationPage/RegistrationPageSeller';
 import NotFound from './Pages/NotFound';
 import { ModalProvider } from './Components/PopUp/PopUpLandingContext';
+import LogInPageSeller from './Pages/LogInPage/LogInPageSeller';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/regsel' element={<RegistrationPageSelle />} />
+          <Route path='/loginsel' element={<LogInPageSeller />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ModalProvider>

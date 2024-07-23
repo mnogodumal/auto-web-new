@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import { useForm } from "react-hook-form";
 
 export default function SellerRegForm() {
+  const navigate = useNavigate()
+
   const {
     register,
     formState: { errors, isValid },
@@ -11,8 +14,8 @@ export default function SellerRegForm() {
     mode: 'onBlur'
   })
 
-  const onSubmit = (data) => {
-    alert(JSON.stringify(data))
+  const onSubmit = () => {
+    navigate('/seller')
     reset()
   }
   return (
@@ -31,7 +34,7 @@ export default function SellerRegForm() {
               <div className="mt-[12px] flex gap-[20px]">
                 <div>
                   <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">E-mail</p>
-                  <input className="mt-[8px] w-[392px] h-[56px] border-2 border-b-[#a2a5a6] border-opacity-[0.2] bg-inherit outline-none font-[200] text-[14px] leading-[171%] text-[var(--text---main)] py-[16px] px-[20px]" type='email' {...register('email', {
+                  <input className="mt-[8px] w-[392px] h-[56px] border-2 border-b-[#a2a5a6] border-opacity-[0.2] bg-inherit outline-none font-[200] text-[14px] leading-[171%] text-[var(--text---main)] py-[16px] px-[20px]" type='text' {...register('email', {
                     required: 'Поле обязательно к заполнению!',
                     pattern: {
                       value: /^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u,
@@ -133,7 +136,7 @@ export default function SellerRegForm() {
                 <div className="flex gap-[20px]">
                   <div>
                     <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">Веб-сайт</p>
-                    <input className="mt-[8px] w-[392px] h-[56px] border-2 border-b-[#a2a5a6] border-opacity-[0.2] bg-inherit outline-none font-[200] text-[14px] leading-[171%] text-[var(--text---main)] py-[16px] px-[20px]" type='url' {...register('web', {
+                    <input className="mt-[8px] w-[392px] h-[56px] border-2 border-b-[#a2a5a6] border-opacity-[0.2] bg-inherit outline-none font-[200] text-[14px] leading-[171%] text-[var(--text---main)] py-[16px] px-[20px]" type='text' {...register('web', {
                       required: 'Поле обязательно к заполнению!',
                       minLength: {
                         value: 3,
@@ -175,7 +178,7 @@ export default function SellerRegForm() {
               </div>
             </div>
             <div className="flex gap-[12px] items-center">
-              <input className="w-[18px] h-[18px] rounded-[4px] bg-[var(--accent---main-green)] caret-yellow-800 " type='checkbox' />
+              <input required className="w-[18px] h-[18px] rounded-[4px] bg-[var(--accent---main-green)] caret-yellow-800 " type='checkbox' />
               <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">Авторизуясь, Вы принимаете
                 <a className="text-[var(--accent---main-green)]" href="/"> Условия использования </a>
                 и
@@ -183,7 +186,7 @@ export default function SellerRegForm() {
                 NOVO
               </p>
             </div>
-            <Button className={'block mt-[48px] mx-auto my-0'} text={'Продолжить'} />
+            <Button className={'block mt-[48px] mx-auto my-0'} text={'Продолжить'} disabled={!isValid} />
           </form>
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function LandingForm({ className }) {
           }
         })} />
         <div className="h-[30px] font-[200] text-[14px] text-[#eb5757]">{errors?.firstname && <p>{errors?.firstname?.message || 'Error!!!'}</p>}</div>
-        <input className=" w-[240px] h-[33px] border-b-2 border-b-[#a2a5a6] border-opacity-[0.2] bg-inherit outline-none font-[200] text-[14px] leading-[171%] text-[#858586]" placeholder="E-mail адрес" type="mail" {...register('email', {
+        <input className=" w-[240px] h-[33px] border-b-2 border-b-[#a2a5a6] border-opacity-[0.2] bg-inherit outline-none font-[200] text-[14px] leading-[171%] text-[#858586]" placeholder="E-mail адрес" type="text" {...register('email', {
           required: 'Поле обязательно к заполнению!',
           pattern: {
             value: /^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u,

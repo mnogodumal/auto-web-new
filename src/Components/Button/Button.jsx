@@ -9,7 +9,7 @@ export default function Button({ text, className, onClick, disabled, to }) {
   const { openModal } = useContext(ModalContext)
 
   const buttonContent = (
-    <button className={classNames(defaultClasses, className)} onClick={() => { openModal() }} disabled={disabled}>
+    <button className={classNames(defaultClasses, className)} onClick={() => { openModal() }} style={{ opacity: disabled ? '0.5' : '1' }} disabled={disabled}>
       {text}
     </button>
   )

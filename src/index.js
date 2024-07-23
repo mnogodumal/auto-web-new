@@ -5,10 +5,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import reportWebVitals from './reportWebVitals';
 import LandingPage from './Pages/LandingPage/LandingPage';
-import RegistrationPageSelle from './Pages/RegistrationPage/RegistrationPageSeller';
 import NotFound from './Pages/NotFound';
 import { ModalProvider } from './Components/PopUp/PopUpLandingContext';
-import LogInPageSeller from './Pages/LogInPage/LogInPageSeller';
+import SellerRegistrationPage from './Pages/SellerPage/SellerRegistrationPage';
+import SellerLogInPage from './Pages/SellerPage/SellerLogInPage';
+import SellerPage from './Pages/SellerPage/SellerPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,8 +18,9 @@ root.render(
       <ModalProvider>
         <Routes>
           <Route path='/' element={<LandingPage />} />
-          <Route path='/regsel' element={<RegistrationPageSelle />} />
-          <Route path='/loginsel' element={<LogInPageSeller />} />
+          <Route path='/regsel' element={<SellerRegistrationPage />} />
+          <Route path='/loginsel' element={<SellerLogInPage />} />
+          <Route path='/seller' element={<SellerPage />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ModalProvider>

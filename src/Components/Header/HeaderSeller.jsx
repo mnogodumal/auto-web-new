@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 
 export default function HeaderSeller() {
@@ -7,7 +8,9 @@ export default function HeaderSeller() {
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="font-[700] text-[30px] leading-[80%] text-[var(--text---main)] ">
-              <a href="/">NOVO SELLER</a>
+              <Link to={'/'}>
+                NOVO SELLER
+              </Link>
             </div>
             <Button text={'Перейти на NOVO'} />
           </div>

@@ -18,6 +18,7 @@ import { ModalProvider } from "../../Components/PopUp/PopUpLandingContext";
 import PopUpLanding from "../../Components/PopUp/PopUpLanding";
 import { Link } from "react-router-dom";
 
+
 export default function LandingPageContent() {
   return (
     <>

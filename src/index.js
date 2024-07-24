@@ -10,6 +10,10 @@ import { ModalProvider } from './Components/PopUp/PopUpLandingContext';
 import SellerRegistrationPage from './Pages/SellerPage/SellerRegistrationPage';
 import SellerLogInPage from './Pages/SellerPage/SellerLogInPage';
 import SellerPage from './Pages/SellerPage/SellerPage';
+import SellerMessagesPage from './Pages/SellerPage/SellerMessagesPage';
+import SellerAdsPage from './Pages/SellerPage/SellerAdsPage';
+import SellerSubscribePage from './Pages/SellerPage/SellerSubscribePage';
+import SellerSettingsPage from './Pages/SellerPage/SellerSettingsPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +25,10 @@ root.render(
           <Route path='/regsel' element={<SellerRegistrationPage />} />
           <Route path='/loginsel' element={<SellerLogInPage />} />
           <Route path='/seller' element={<SellerPage />} />
+          <Route path='/sellersms' element={<SellerMessagesPage />} />
+          <Route path='/sellerads' element={<SellerAdsPage />} />
+          <Route path='/sellersubscribe' element={<SellerSubscribePage />} />
+          <Route path='/sellersettings' element={<SellerSettingsPage />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ModalProvider>

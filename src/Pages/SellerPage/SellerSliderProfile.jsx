@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function SellerSliderProfile() {
+  const [header, setHeader] = useState('')
+
+  function changeHeader() {
+
+  }
+
   return (
     <>
       <section className="container">
@@ -12,7 +19,7 @@ export default function SellerSliderProfile() {
             {({ isActive }) => (
               <>
                 <div>
-                  <span>Мои объявления</span>
+                  <span id="ads">Мои объявления</span>
                 </div>
                 <div className={`w-full h-[3px] ${isActive ? 'bg-[var(--accent---main-green)]' : ''}`}>
                 </div>
@@ -41,7 +48,7 @@ export default function SellerSliderProfile() {
               </>
             )}
           </NavLink>
-          <NavLink className="font-[500] text-[14px] leading-[171%] text-[var(--text---main)]" to={'/sellersms'}>
+          <NavLink className="font-[500] text-[14px] leading-[171%] text-[var(--text---main)]" to={'/sellersettings'}>
             {({ isActive }) => (
               <>
                 <div>

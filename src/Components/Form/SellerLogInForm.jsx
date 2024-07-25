@@ -53,7 +53,7 @@ export default function SellerLogInForm() {
               <input className="w-[18px] h-[18px] rounded-[4px] bg-[var(--accent---main-green)] caret-yellow-800 " type='checkbox' />
               <p className="font-[200] text-[14px] leading-[171%] text-[var(--text---secondary)] ">Не выходить из системы</p>
             </div>
-            <Button className={'block mt-[40px] mx-auto my-0'} text={'Продолжить'} disabled={!isValid} />
+            <Button className={'block mt-[40px] mx-auto my-0'} text={'Продолжить'} disabled={!isValid} to={'/sellerads'} />
           </form>
         </div>
       </div>

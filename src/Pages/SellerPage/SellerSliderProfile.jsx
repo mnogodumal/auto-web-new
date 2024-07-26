@@ -1,24 +1,30 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-
-
-
-
-
-
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function SellerSliderProfile() {
-  const [header, setHeader] = useState('')
 
-  function changeHeader() {
+  const location = useLocation()
 
+  const getPageTitle = () => {
+    switch (location.pathname) {
+      case ('/sellerads'):
+        return 'Мои объявления'
+      case ('/sellersms'):
+        return 'Сообщения'
+      case ('/sellersubscribe'):
+        return 'Управление подпиской'
+      case ('/sellersettings'):
+        return 'Настройки профиля'
+      default:
+        return 'Мои объявления'
+    }
   }
 
   return (
     <>
       <section className="container">
         <div>
-          <p className="mt-[39px] font-[500] text-[45px] leading-[150%] text-[var(--text---main)]">Мои объявления</p>
+          <p className="mt-[39px] font-[500] text-[45px] leading-[150%] text-[var(--text---main)]">{getPageTitle()}</p>
         </div>
         <div className="mt-[60px] flex gap-[60px]">
           <NavLink className="font-[500] text-[14px] leading-[171%] text-[var(--text---main)]" to={'/sellerads'}>

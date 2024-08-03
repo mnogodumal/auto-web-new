@@ -24,3 +24,14 @@ code {
   width: 1220px;
   margin: 0 auto;
 }
+
+.text-gradient {
+  /* background: linear-gradient(180deg, #28ad88 0%, #239a79 100%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* background-clip: text; */
+}
+
+.greenproz {
+  background: rgba(0, 150, 97, 0.1)
+}

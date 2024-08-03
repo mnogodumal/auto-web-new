@@ -3,6 +3,7 @@ import Footer from '../../Components/Footer/Footer'
 
 
 import HeaderSeller from '../../Components/Header/HeaderSeller'
+import SellerSearchBar from './SellerSearchBar'
 
 
 
@@ -20,20 +21,10 @@ export default function SellerAdsPage() {
             <span>Использовано объявлений: </span>
             <span className='text-[var(--accent---main-green)]'>4/10</span>
           </div>
+          <SellerSearchBar />
         </div>
       </section>
       <Footer />
     </>
   )
 }
-
-
-
-
-
-
-
-
-
-
-

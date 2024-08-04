@@ -35,3 +35,7 @@ code {
 .greenproz {
   background: rgba(0, 150, 97, 0.1)
 }
+
+.graycard {
+  background: rgba(139, 149, 158, 0.05);
+}

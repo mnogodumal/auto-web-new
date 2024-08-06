@@ -1,3 +1,4 @@
+import Button from '../../Components/Button/Button'
 import Footer from '../../Components/Footer/Footer'
 
 
@@ -16,7 +17,7 @@ export default function SellerAdsPage() {
     <>
       <HeaderSeller />
       <SellerSliderProfile />
-      <section className='pt-[48px] bg-[#F9F9F9]'>
+      <section className='pt-[48px] pb-[120px] bg-[#F9F9F9]'>
         <div className='container'>
           <div className='font-[400] text-[24px] leading-[150%] text-[var(--text---main)]'>
             <span>Использовано объявлений: </span>
@@ -25,8 +26,15 @@ export default function SellerAdsPage() {
           <div className='mt-[48px]'>
             <SellerSearchBar />
           </div>
-          <div className='mt-[20px]'>
+          <div className='mt-[20px] grid grid-cols-3 gap-[20px]'>
             <SellerAdsCard />
+            <SellerAdsCard />
+            <SellerAdsCard />
+            <SellerAdsCard />
+            <SellerAdsCard />
+          </div>
+          <div className='mt-[48px] flex justify-center'>
+            <Button text={'Загрузить ещё'} />
           </div>
         </div>
       </section>

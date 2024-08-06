@@ -15,6 +15,8 @@ export default function SellerSliderProfile() {
         return 'Управление подпиской'
       case ('/sellersettings'):
         return 'Настройки профиля'
+      case ('/sellerads/new'):
+        return 'Создание объявления'
       default:
         return 'Мои объявления'
     }

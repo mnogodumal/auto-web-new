@@ -11,7 +11,7 @@ export default function SellerSearchBar() {
           <input className=" font-[300] text-[14px] leading-[171%] text-[var(--text---secondary)] outline-none w-[700px] " type="text" placeholder="Поиск по объявлениях" />
         </div>
         <div>
-          <Button className={'text-[#28ad88] font-[500] text-[14px] leading-[171%] uppercase flex items-center gap-[12px] greenproz '} icon={<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <Button className={'text-custom-green font-[500] text-[14px] leading-[171%] uppercase flex items-center gap-[12px] greenproz '} icon={<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 0V14" stroke="url(#paint0_linear_163_9451)" stroke-width="2" />
             <path d="M14 7L0 7" stroke="url(#paint1_linear_163_9451)" stroke-width="2" />
             <defs>
@@ -24,7 +24,7 @@ export default function SellerSearchBar() {
                 <stop offset="1" stop-color="#239A79" />
               </linearGradient>
             </defs>
-          </svg>} text={'добавить объявление'} />
+          </svg>} text={'добавить объявление'} to={'/sellerads/new'} />
         </div>
       </div>
     </>

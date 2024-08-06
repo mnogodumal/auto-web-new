@@ -25,13 +25,6 @@ code {
   margin: 0 auto;
 }
 
-.text-gradient {
-  /* background: linear-gradient(180deg, #28ad88 0%, #239a79 100%); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
-  /* background-clip: text; */
-}
-
 .greenproz {
   background: rgba(0, 150, 97, 0.1)
 }
@@ -39,3 +32,9 @@ code {
 .graycard {
   background: rgba(139, 149, 158, 0.05);
 }
+
+.text-custom-green {
+  color: #28ad88
+}
+
+/* у меня иначе почему то в кнопке не меняются какие-либо значения, только напрямую через css если задавать их, то он затерают дефолтные */

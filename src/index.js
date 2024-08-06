@@ -13,6 +13,7 @@ import SellerMessagesPage from './Pages/SellerPage/SellerMessagesPage';
 import SellerAdsPage from './Pages/SellerPage/SellerAdsPage';
 import SellerSubscribePage from './Pages/SellerPage/SellerSubscribePage';
 import SellerSettingsPage from './Pages/SellerPage/SellerSettingsPage';
+import SellerNewAdsPage from './Pages/SellerPage/SellerNewAdsPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +26,7 @@ root.render(
           <Route path='/loginsel' element={<SellerLogInPage />} />
           <Route path='/sellersms' element={<SellerMessagesPage />} />
           <Route path='/sellerads' element={<SellerAdsPage />} />
+          <Route path='/sellerads/new' element={<SellerNewAdsPage />} />
           <Route path='/sellersubscribe' element={<SellerSubscribePage />} />
           <Route path='/sellersettings' element={<SellerSettingsPage />} />
           <Route path='*' element={<NotFound />} />

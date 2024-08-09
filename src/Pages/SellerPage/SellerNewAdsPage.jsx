@@ -1,5 +1,6 @@
 import ButtonBack from "../../Components/Button/ButtonBack";
 import Footer from "../../Components/Footer/Footer";
+import CreationCardForm from "../../Components/Form/CreationCardForm";
 import HeaderSeller from "../../Components/Header/HeaderSeller";
 import SellerSliderProfile from "./SellerSliderProfile";
 
@@ -14,13 +15,16 @@ export default function SellerNewAdsPage() {
             <span>Использовано объявлений: </span>
             <span className='text-[var(--accent---main-green)]'>4/10</span>
           </div>
-          <div>
+          <div className="flex items-center justify-between mt-[48px] px-[32px] py-[21px] bg-[var(--general---white)] rounded-[8px] ">
             <div>
               <ButtonBack to={'/sellerads'} />
             </div>
             <div>
-
+              <p className="font-[300] text-[20px] leading-[150%] ">Создание нового объявления</p>
             </div>
+          </div>
+          <div className="mt-[20px]">
+            <CreationCardForm />
           </div>
         </div>
       </section>

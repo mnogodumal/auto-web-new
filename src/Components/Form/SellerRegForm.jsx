@@ -186,7 +186,7 @@ export default function SellerRegForm() {
                 NOVO
               </p>
             </div>
-            <Button className={'block mt-[48px] mx-auto my-0'} text={'Продолжить'} disabled={!isValid} />
+            <Button className={'block mt-[48px] mx-auto my-0'} text={'Продолжить'} disabled={!isValid} to={'/sellerads'} />
           </form>
         </div>
       </div>

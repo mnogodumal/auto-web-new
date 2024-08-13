@@ -9,8 +9,6 @@ export default function CreationCardForm() {
     reset
   } = useForm({
     mode: 'onBlur'
-
-
   })
 
   return (

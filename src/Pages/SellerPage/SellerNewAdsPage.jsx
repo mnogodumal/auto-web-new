@@ -1,8 +1,9 @@
 import ButtonBack from "../../Components/Button/ButtonBack";
 import Footer from "../../Components/Footer/Footer";
-import CreationCardForm from "../../Components/Form/CreationCardForm";
+import CreationCardForm from "./CreationCard/CreationCardForm";
 import HeaderSeller from "../../Components/Header/HeaderSeller";
 import SellerSliderProfile from "./SellerSliderProfile";
+import CreationCard from "./CreationCard/CreationCard";
 
 export default function SellerNewAdsPage() {
   return (
@@ -24,7 +25,7 @@ export default function SellerNewAdsPage() {
             </div>
           </div>
           <div className="mt-[20px]">
-            <CreationCardForm />
+            <CreationCard />
           </div>
         </div>
       </section>

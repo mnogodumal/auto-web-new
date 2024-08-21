@@ -9,7 +9,6 @@ import SellerSearchBar from './SellerSearchBar'
 
 
 
-
 import SellerSliderProfile from './SellerSliderProfile'
 
 export default function SellerAdsPage() {
